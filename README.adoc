@@ -1,0 +1,5 @@
+= summit-2020-kogito-businessautomation
+
+Kogito—business automation in a cloud-native world
+
+    mvn clean install
