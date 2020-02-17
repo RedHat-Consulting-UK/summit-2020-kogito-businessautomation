@@ -12,7 +12,7 @@ RUN git clone https://github.com/RedHat-Consulting-UK/summit-2020-pam-fraudmanag
 
 # summit-2020-kogito-businessautomation
 RUN git clone https://github.com/RedHat-Consulting-UK/summit-2020-kogito-businessautomation.git && \
-cd /tmp/summit-2020-kogito-businessautomation/01-kogito-travel-agency && \
+    cd /tmp/summit-2020-kogito-businessautomation/01-kogito-travel-agency && \
     mvn de.qaware.maven:go-offline-maven-plugin:resolve-dependencies -DdownloadSources -DdownloadJavadoc -B -Dmaven.repo.local=/tmp/bucketrepo && \
     mvn dependency:go-offline -B -Dmaven.repo.local=/tmp/bucketrepo && \
     mvn clean install -DskipTests -B -Dmaven.repo.local=/tmp/bucketrepo && \
